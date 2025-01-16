@@ -1,0 +1,143 @@
+/* shared styles */
+*{
+    margin: 0x;
+    padding: 0px;
+    font-family: Mulish;
+    font-size: 16px;
+}
+body{
+    margin: 0px 135px;
+}
+
+:root{
+    --primary-color: #FF5400;
+    --small-text: #424247;
+    --large-text: #131318;
+}
+
+
+
+/* header styles */
+
+
+/* nav styles */
+.site-name{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav>ul{
+    display: flex;
+    gap: 40px;
+}
+
+.nav>ul>li{
+    list-style: none;
+    font-size: 1.12rem;
+}
+
+.nav>ul a{
+    text-decoration: none;
+    color: var(--small-text);
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name > h3{
+    font-size: 2.5rem;
+}
+.site-name span{
+    font-size: 2.5rem;
+    color: var(--primary-color);  
+}
+
+
+/* banner styles */
+.banner-container{
+    background-image:
+    linear-gradient(rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%),
+    url(../Images/Group\ 13\ \(1\)\ \(1\).png);;
+    width: 100%;
+    border-radius: 16px;
+    background-size: cover;
+    color: white;
+    height: 70vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-text{
+    width: 60%;
+    text-align: center;
+}
+.banner-text> h3{
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0px;
+}
+.where-to-go{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    background-color: linear-gradient(rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%);
+}
+.banner-s {
+    width: 6rem;
+    border: none;
+    outline: none;
+    appearance: none;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.btn-primary{
+    width: 6rem;
+    border: none;
+    outline: none;
+    appearance: none;
+    border-radius: 5px;
+    padding: .5rem;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+
+
+/* responsive part */
+
+@media screen and (max-width: 600px) {
+
+    body{
+        margin: 0px 50px ;
+    }
+
+    .banner-container,
+    .main-nav,
+    .where-to-go{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .banner-text,
+    .banner-s,
+    .btn-primary{
+        width: 90%;
+    }
+
+    .banner-container{
+        height: 600px;
+        width: 100%;
+    }
+
+    /* .banner-text>h3{
+        font-size: 2rem;
+    } */
+}
